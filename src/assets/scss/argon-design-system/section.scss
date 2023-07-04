@@ -3,14 +3,24 @@
     padding-top: $spacer * 4;
     padding-bottom: $spacer * 4;
 }
-
+.section-hero{
+    // background: red;
+}
 .coin-app {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
 }
-
+.map-section{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+}
 .coin-search {
     margin-bottom: 50px;
     display: flex;

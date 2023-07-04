@@ -6,14 +6,14 @@ import Coin from './Coin';
 
 
 import {
-  FormGroup,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
+  // FormGroup,
+  // Input,
+  // InputGroupAddon,
+  // InputGroupText,
+  // InputGroup,
   Container,
-  Row,
-  Col,
+  // Row,
+  // Col,
 } from "reactstrap";
 
 function CoinSection() {
