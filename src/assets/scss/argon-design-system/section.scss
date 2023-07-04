@@ -3,8 +3,14 @@
     padding-top: $spacer * 4;
     padding-bottom: $spacer * 4;
 }
-.section-hero{
-    // background: red;
+.order-btn{
+    margin-top: 20px;
+}
+.viber_container{ 
+    display: none;
+    @include media-breakpoint-down(md) {
+       display: block;
+    }
 }
 .coin-app {
     display: flex;

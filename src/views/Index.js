@@ -44,6 +44,8 @@ import Carousel from "./IndexSections/Carousel.js";
 // import Icons from "./IndexSections/Icons.js";
 // import Login from "./IndexSections/Login.js";
 import Download from "./IndexSections/Download.js";
+import "../assets/vendor/font-awesome/css/font-awesome.min.css";
+
 
 class Index extends React.Component {
   componentDidMount() {

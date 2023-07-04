@@ -47,10 +47,10 @@ class Hero extends React.Component {
                       src={require("assets/img/brand/textlogo.png")}
                     />
                     <p className="lead text-white">
-                      A beautiful Design System for Bootstrap 4. It's Free and
-                      Open Source.
+                        Buy, sell and trade with Crypto Exchange Armenia Fast and secure transactions
+                        with a low-interest rate
                     </p>
-                    <Button className="btn-1 btn-neutral ml-1 btn btn-default">
+                    <Button className="btn-1 btn-neutral ml-1 btn btn-default order-btn">
                       order Now
                     </Button>
                   </Col>

@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Headroom from "headroom.js";
+import { FaViber } from 'react-icons/fa';
+import { FaTelegram } from 'react-icons/fa';
+
 import {
   UncontrolledCollapse,
   DropdownToggle,
@@ -71,7 +74,7 @@ class DemoNavbar extends React.Component {
                       <Link to="/">
                         <img
                           alt="..."
-                          src={require("assets/img/brand/argon-react.png")}
+                          src={require("assets/img/brand/logo.png")}
                         />
                       </Link>
                     </Col>
@@ -87,13 +90,19 @@ class DemoNavbar extends React.Component {
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
                       <i className="ni ni-ui-04 d-lg-none mr-1" />
-                      <span className="nav-link-inner--text">Components</span>
+                      <span className="nav-link-inner--text">ABOUT US</span>
                     </DropdownToggle>
                   </UncontrolledDropdown>
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
                       <i className="ni ni-collection d-lg-none mr-1" />
-                      <span className="nav-link-inner--text">Examples</span>
+                      <span className="nav-link-inner--text">CONTACT US</span>
+                    </DropdownToggle>
+                  </UncontrolledDropdown>
+                  <UncontrolledDropdown nav>
+                    <DropdownToggle nav>
+                      <i className="ni ni-collection d-lg-none mr-1" />
+                      <span className="nav-link-inner--text">MAP</span>
                     </DropdownToggle>
                   </UncontrolledDropdown>
                 </Nav>
@@ -101,7 +110,7 @@ class DemoNavbar extends React.Component {
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
-                      href="https://www.facebook.com/creativetim"
+                      href="https://www.facebook.com/cryptoexchangearmenia"
                       id="tooltip333589074"
                       target="_blank"
                     >
@@ -117,7 +126,7 @@ class DemoNavbar extends React.Component {
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
-                      href="https://www.instagram.com/creativetimofficial"
+                      href="https://www.instagram.com/cryptoexchangearmenia"
                       id="tooltip356693867"
                       target="_blank"
                     >
@@ -133,33 +142,49 @@ class DemoNavbar extends React.Component {
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
-                      href="https://twitter.com/creativetim"
-                      id="tooltip184698705"
+                      href="https://t.me/narekhovhannisyan7"
+                      id="tooltip184698708"
                       target="_blank"
                     >
-                      <i className="fa fa-twitter-square" />
+                      <FaTelegram />
                       <span className="nav-link-inner--text d-lg-none ml-2">
-                        Twitter
+                        Telegram
                       </span>
                     </NavLink>
-                    <UncontrolledTooltip delay={0} target="tooltip184698705">
-                      Follow us on Twitter
+                    <UncontrolledTooltip delay={0} target="tooltip184698708">
+                      Join us on Telegram
                     </UncontrolledTooltip>
                   </NavItem>
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
-                      href="https://github.com/creativetimofficial/argon-design-system-react"
+                      href="https://wa.me/37455077111"
+                      id="tooltip184698705"
+                      target="_blank"
+                    >
+                      <i className="fa fa-whatsapp" />
+                      <span className="nav-link-inner--text d-lg-none ml-2">
+                        Whatsapp
+                      </span>
+                    </NavLink>
+                    <UncontrolledTooltip delay={0} target="tooltip184698705">
+                      Call us on Whatsapp
+                    </UncontrolledTooltip>
+                  </NavItem>
+                  <NavItem className="viber_container">
+                    <NavLink
+                      className="nav-link-icon"
+                      href="viber://contact?number=%2B37455077111"
                       id="tooltip112445449"
                       target="_blank"
                     >
-                      <i className="fa fa-github" />
+                      <FaViber />
                       <span className="nav-link-inner--text d-lg-none ml-2">
-                        Github
+                        Viber
                       </span>
                     </NavLink>
                     <UncontrolledTooltip delay={0} target="tooltip112445449">
-                      Star us on Github
+                    Call us on Viber
                     </UncontrolledTooltip>
                   </NavItem>
                 </Nav>
