@@ -19,7 +19,16 @@ import {
   UncontrolledTooltip,
 } from "reactstrap";
 
+
 class DemoNavbar extends React.Component {
+
+  handleClickScroll = () => {
+    const element = document.getElementById('map_section');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
+
   componentDidMount() {
     let headroom = new Headroom(document.getElementById("navbar-main"));
     // initialise
@@ -102,7 +111,7 @@ class DemoNavbar extends React.Component {
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
                       <i className="ni ni-collection d-lg-none mr-1" />
-                      <span className="nav-link-inner--text">MAP</span>
+                      <span className="nav-link-inner--text" onClick={this.handleClickScroll}>MAP</span>
                     </DropdownToggle>
                   </UncontrolledDropdown>
                 </Nav>

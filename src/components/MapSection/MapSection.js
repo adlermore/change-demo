@@ -199,7 +199,7 @@ class MapSection extends React.Component {
     render() {
           
         return (
-            <div className="map-section">
+            <div className="map-section" id="map_section">
                 <Map
                     google={this.props.google}
                     styles={mapStyles}

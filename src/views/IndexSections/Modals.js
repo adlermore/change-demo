@@ -168,10 +168,11 @@ class Modals extends React.Component {
             <Button
               block
               color="default"
+              className="btn-1 btn-neutral ml-1 btn btn-default order-btn"
               type="button"
               onClick={() => this.toggleModal("formModal")}
             >
-              Form
+              ORDER NOW
             </Button>
             <Modal
               className="modal-dialog-centered"

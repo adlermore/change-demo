@@ -10,6 +10,7 @@ InputGroupText, Container, } from "reactstrap";
 import classnames from "classnames";
 import { UncontrolledAlert } from "reactstrap";
 
+
 const FormSection = () => {
 
   const formCurr = useRef();
@@ -32,7 +33,7 @@ const FormSection = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_evhmkfd', 'template_s1gxyq6', formCurr.current, 'WmD5TotMNbvtn8RJe')
+    emailjs.sendForm('service_evhmkfd', 'template_hd9ym9t', formCurr.current, 'WmD5TotMNbvtn8RJe')
       .then((result) => {
         console.log(result.text);
       }, (error) => {
@@ -55,7 +56,6 @@ const FormSection = () => {
           </span>
         </UncontrolledAlert> 
         }
-
           <Row className="justify-content-center">
             <Col lg="8">
               <Card className="bg-gradient-secondary shadow">
@@ -69,10 +69,10 @@ const FormSection = () => {
                     <InputGroup className="input-group-alternative">
                       <InputGroupAddon addonType="prepend">
                         <InputGroupText>
-                          <i className="ni ni-user-run" />
+                          <i className="ni ni-single-02" />
                         </InputGroupText>
                       </InputGroupAddon>
-                      <Input placeholder="Your name"   required name="user_name"  type="text" />
+                      <Input placeholder="Your name"   required name="user_name"  autocomplete="off"  type="text" />
                     </InputGroup>
                   </Form.Group>
                   <Form.Group  controlId="validationCustom02" >
@@ -82,7 +82,7 @@ const FormSection = () => {
                           <i className="ni ni-email-83" />
                         </InputGroupText>
                       </InputGroupAddon>
-                      <Input placeholder="Email address" required name="user_email"   type="email" />
+                      <Input placeholder="Email address" required name="user_email"   autocomplete="off"  type="email" />
                     </InputGroup>
                   </Form.Group>
                   <Form.Group className="mb-4"  controlId="validationCustom03">

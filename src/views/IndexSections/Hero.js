@@ -1,9 +1,9 @@
 import React from "react";
-// import * as THREE from "three";
 import NET from 'vanta/dist/vanta.net.min';
-
-// reactstrap components
-import { Button, Container, Row, Col } from "reactstrap";
+import classnames from "classnames";
+import { Container, Button, Card, CardBody, FormGroup, Form,
+Input, InputGroupAddon, InputGroupText, InputGroup, Modal,
+Row, Col,} from "reactstrap";
 
 class Hero extends React.Component {
 
@@ -11,6 +11,15 @@ class Hero extends React.Component {
     super()
     this.vantaRef = React.createRef()
   }
+
+  state = {};
+
+  toggleModal = (state) => {
+    this.setState({
+      [state]: !this.state[state],
+    });
+  };
+
   componentDidMount() {
     this.vantaEffect = NET({
       el: this.vantaRef.current,
@@ -47,12 +56,99 @@ class Hero extends React.Component {
                       src={require("assets/img/brand/textlogo.png")}
                     />
                     <p className="lead text-white">
-                        Buy, sell and trade with Crypto Exchange Armenia Fast and secure transactions
-                        with a low-interest rate
+                      Buy, sell and trade with Crypto Exchange Armenia Fast and secure transactions
+                      with a low-interest rate
                     </p>
-                    <Button className="btn-1 btn-neutral ml-1 btn btn-default order-btn">
+                    <Button
+                      className="btn-1 btn-neutral ml-1 btn btn-default order-btn"
+                      onClick={() => this.toggleModal("formModal")}
+                    >
                       order Now
                     </Button>
+                    <Modal
+                      className="modal-dialog-centered"
+                      size="sm"
+                      isOpen={this.state.formModal}
+                      toggle={() => this.toggleModal("formModal")}
+                    >
+                      <div className="modal-header">
+                        <h6 className="modal-title" id="modal-title-default">
+                          Type your modal title
+                        </h6>
+                        <button
+                          aria-label="Close"
+                          className="close"
+                          data-dismiss="modal"
+                          type="button"
+                          onClick={() => this.toggleModal("formModal")}
+                        >
+                          <span aria-hidden={true}>×</span>
+                        </button>
+                      </div>
+                      <div className="modal-body p-0">
+                        <Card className="bg-secondary shadow border-0">
+                          <CardBody className="px-lg-5 py-lg-5">
+                            <div className="text-center text-muted mb-4">
+                              <small>Or sign in with credentials</small>
+                            </div>
+                            <Form role="form">
+                              <FormGroup
+                                className={classnames("mb-3", {
+                                  focused: this.state.emailFocused,
+                                })}
+                              >
+                                <InputGroup className="input-group-alternative">
+                                  <InputGroupAddon addonType="prepend">
+                                    <InputGroupText>
+                                      <i className="ni ni-email-83" />
+                                    </InputGroupText>
+                                  </InputGroupAddon>
+                                  <Input
+                                    placeholder="Email"
+                                    type="email"
+                                    onFocus={(e) =>
+                                      this.setState({ emailFocused: true })
+                                    }
+                                    onBlur={(e) =>
+                                      this.setState({ emailFocused: false })
+                                    }
+                                  />
+                                </InputGroup>
+                              </FormGroup>
+                              <FormGroup
+                                className={classnames({
+                                  focused: this.state.passwordFocused,
+                                })}
+                              >
+                                <InputGroup className="input-group-alternative">
+                                  <InputGroupAddon addonType="prepend">
+                                    <InputGroupText>
+                                      <i className="ni ni-lock-circle-open" />
+                                    </InputGroupText>
+                                  </InputGroupAddon>
+                                  <Input
+                                    placeholder="Name"
+                                    type="password"
+                                    autoComplete="off"
+                                    onFocus={(e) =>
+                                      this.setState({ passwordFocused: true })
+                                    }
+                                    onBlur={(e) =>
+                                      this.setState({ passwordFocused: false })
+                                    }
+                                  />
+                                </InputGroup>
+                              </FormGroup>
+                              <div className="text-center">
+                                <Button className="my-4" color="primary" type="button">
+                                  Order Now
+                                </Button>
+                              </div>
+                            </Form>
+                          </CardBody>
+                        </Card>
+                      </div>
+                    </Modal>
                   </Col>
                 </Row>
               </div>
