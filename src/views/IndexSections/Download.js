@@ -18,9 +18,9 @@ class Download extends React.Component {
                   </span>
                 </h2>
                 <p className="lead">
-                Cryptocurrencies like Bitcoin and Ethereum are powered by a technology called the blockchain. 
-                At its most basic, a blockchain is a list of transactions that anyone can view and verify. 
-                The Bitcoin blockchain, for example, contains a record of every time someone sent or received bitcoin.
+                  Cryptocurrencies like Bitcoin and Ethereum are powered by a technology called the blockchain.
+                  At its most basic, a blockchain is a list of transactions that anyone can view and verify.
+                  The Bitcoin blockchain, for example, contains a record of every time someone sent or received bitcoin.
                 </p>
                 <div className="text-center">
                   <h4 className="display-4 mb-5 mt-5">
@@ -29,7 +29,7 @@ class Download extends React.Component {
                   <Row className="justify-content-center">
                     <Col lg="2" xs="4">
                       <a
-                        href="#/"                    id="tooltip255035741"
+                        href="#/" id="tooltip255035741"
                         target="blank"
                       >
                         <img
@@ -44,7 +44,7 @@ class Download extends React.Component {
                     </Col>
                     <Col lg="2" xs="4">
                       <a
-                        href="#/"                        id="tooltip265846671"
+                        href="#/" id="tooltip265846671"
                         target="blank"
                       >
                         <img
@@ -54,7 +54,7 @@ class Download extends React.Component {
                         />
                       </a>
                       <UncontrolledTooltip delay={0} target="tooltip265846671">
-                       ETHEREUM
+                        ETHEREUM
                       </UncontrolledTooltip>
                     </Col>
                     <Col lg="2" xs="4">
@@ -70,7 +70,7 @@ class Download extends React.Component {
                         />
                       </a>
                       <UncontrolledTooltip delay={0} target="tooltip233150499">
-                       TETHER
+                        TETHER
                       </UncontrolledTooltip>
                     </Col>
                     <Col lg="2" xs="4">
@@ -86,7 +86,7 @@ class Download extends React.Component {
                         />
                       </a>
                       <UncontrolledTooltip delay={0} target="tooltip308866163">
-                      BNB
+                        BNB
                       </UncontrolledTooltip>
                     </Col>
                     <Col lg="2" xs="4">
@@ -118,7 +118,7 @@ class Download extends React.Component {
                         />
                       </a>
                       <UncontrolledTooltip delay={0} target="tooltip646643508">
-                       XRP
+                        XRP
                       </UncontrolledTooltip>
                     </Col>
                   </Row>
