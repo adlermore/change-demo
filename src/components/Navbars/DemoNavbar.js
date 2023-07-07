@@ -115,7 +115,7 @@ class DemoNavbar extends React.Component {
                     </DropdownToggle>
                   </UncontrolledDropdown>
                 </Nav>
-                <Nav className="align-items-lg-center ml-lg-auto" navbar>
+                <Nav className="align-items-lg-center ml-lg-auto social-nav " navbar>
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"

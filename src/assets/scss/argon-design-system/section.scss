@@ -17,6 +17,7 @@
     flex-direction: column;
     align-items: center;
 }
+
 .carusel-section{
     padding-bottom: 4rem;
 }
@@ -104,7 +105,7 @@
 }
 
 .hero_logo_img {
-    width: 320px;
+    width: 500px;
 }
 
 .animation_block {
@@ -409,12 +410,12 @@
         }
 
         &.shape-default {
-            background: linear-gradient(150deg, shapes-default-color("step-1-gradient-bg") 15%, shapes-default-color("step-2-gradient-bg") 70%, shapes-default-color("step-3-gradient-bg") 94%);
+            // background: linear-gradient(150deg, shapes-default-color("step-1-gradient-bg") 15%, shapes-default-color("step-2-gradient-bg") 70%, shapes-default-color("step-3-gradient-bg") 94%);
+            background: black;
         }
 
         &.shape-light {
             background: linear-gradient(150deg, shapes-light-color("step-1-gradient-bg") 15%, shapes-light-color("step-2-gradient-bg") 70%, shapes-light-color("step-3-gradient-bg") 94%);
-
         }
 
         &.shape-dark {
