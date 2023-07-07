@@ -63,7 +63,7 @@ class Hero extends React.Component {
                       className="btn-1 btn-neutral ml-1 btn btn-default order-btn"
                       onClick={() => this.toggleModal("formModal")}
                     >
-                      order Now
+                      Make an Order
                     </Button>
                     <Modal
                       className="modal-dialog-centered"
@@ -73,7 +73,7 @@ class Hero extends React.Component {
                     >
                       <div className="modal-header">
                         <h6 className="modal-title" id="modal-title-default">
-                          Type your modal title
+                          Visit Now
                         </h6>
                         <button
                           aria-label="Close"
@@ -123,12 +123,36 @@ class Hero extends React.Component {
                                 <InputGroup className="input-group-alternative">
                                   <InputGroupAddon addonType="prepend">
                                     <InputGroupText>
-                                      <i className="ni ni-lock-circle-open" />
+                                      <i className="ni " />
                                     </InputGroupText>
                                   </InputGroupAddon>
                                   <Input
                                     placeholder="Name"
-                                    type="password"
+                                    type="text"
+                                    autoComplete="off"
+                                    onFocus={(e) =>
+                                      this.setState({ passwordFocused: true })
+                                    }
+                                    onBlur={(e) =>
+                                      this.setState({ passwordFocused: false })
+                                    }
+                                  />
+                                </InputGroup>
+                              </FormGroup>
+                              <FormGroup
+                                className={classnames({
+                                  focused: this.state.passwordFocused,
+                                })}
+                              >
+                                <InputGroup className="input-group-alternative">
+                                  <InputGroupAddon addonType="prepend">
+                                    <InputGroupText>
+                                      <i className="ni ni-phone" />
+                                    </InputGroupText>
+                                  </InputGroupAddon>
+                                  <Input
+                                    placeholder="Phone Number"
+                                    type="text"
                                     autoComplete="off"
                                     onFocus={(e) =>
                                       this.setState({ passwordFocused: true })
@@ -141,7 +165,7 @@ class Hero extends React.Component {
                               </FormGroup>
                               <div className="text-center">
                                 <Button className="my-4" color="primary" type="button">
-                                  Order Now
+                                  Visit Now
                                 </Button>
                               </div>
                             </Form>

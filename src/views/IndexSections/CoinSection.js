@@ -1,23 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-// import './style.css';
 import Coin from './Coin';
 
 
 
-import {
-  // FormGroup,
-  // Input,
-  // InputGroupAddon,
-  // InputGroupText,
-  // InputGroup,
-  Container,
-  // Row,
-  // Col,
-} from "reactstrap";
+import { Container} from "reactstrap";
 
 function CoinSection() {
-  // state = {};
 
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState('');
@@ -43,14 +32,9 @@ function CoinSection() {
   );
   return (
     <>
-      <section className="section pb-0 section-components">
-        <div className="py-5 bg-secondary">
+      <section className="section coin_section pb-0 section-components">
+        <div className="py-7 bg-secondary">
           <Container>
-            <div className="mb-3">
-              <small className="text-uppercase font-weight-bold">
-                Form controls (alternative)
-              </small>
-            </div>
             <div className="coin-app">
               <div className="coin-search">
                 <h1 className="coin-text">Search a for a Cryptocurrency</h1>
