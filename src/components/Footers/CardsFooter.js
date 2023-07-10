@@ -37,20 +37,6 @@ class CardsFooter extends React.Component {
               <Col lg="6">
                 <Row className="col-text-lg-right footer-social btn-wrapper justify-content-end">
                   <Button
-                    className="btn-icon-only rounded-circle"
-                    color="twitter"
-                    href="https://t.me/narekhovhannisyan7"
-                    id="tooltip475038074"
-                    target="_blank"
-                  >
-                    <span className="btn-inner--icon">
-                      <FaTelegram />
-                    </span>
-                  </Button>
-                  <UncontrolledTooltip delay={0} target="tooltip475038074">
-                    Follow us
-                  </UncontrolledTooltip>
-                  <Button
                     className="btn-icon-only rounded-circle ml-1"
                     color="facebook"
                     href="https://www.facebook.com/cryptoexchangearmenia"
@@ -64,6 +50,7 @@ class CardsFooter extends React.Component {
                   <UncontrolledTooltip delay={0} target="tooltip837440414">
                     Like us
                   </UncontrolledTooltip>
+                        
                   <Button
                     className="btn-icon-only insta-btn rounded-circle ml-1"
                     color="dribbble"
@@ -76,6 +63,20 @@ class CardsFooter extends React.Component {
                     </span>
                   </Button>
                   <UncontrolledTooltip delay={0} target="tooltip829810202">
+                    Follow us
+                  </UncontrolledTooltip>
+                  <Button
+                    className="btn-icon-only rounded-circle"
+                    color="twitter"
+                    href="https://t.me/cryptoexchangearmenia"
+                    id="tooltip475038074"
+                    target="_blank"
+                  >
+                    <span className="btn-inner--icon">
+                      <FaTelegram />
+                    </span>
+                  </Button>
+                  <UncontrolledTooltip delay={0} target="tooltip475038074">
                     Follow us
                   </UncontrolledTooltip>
                   <Button
@@ -92,6 +93,7 @@ class CardsFooter extends React.Component {
                   <UncontrolledTooltip delay={0} target="tooltip495507257">
                     Call us
                   </UncontrolledTooltip>
+                
                 </Row>
                 <Row className="footer_contacts_inner footer-social-list">
                   <div className="addres_line">

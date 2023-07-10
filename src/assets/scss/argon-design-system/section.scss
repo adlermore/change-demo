@@ -16,6 +16,40 @@
     }
 }
 
+.info-changeName {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.info-inner-win{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    > div{
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        margin-bottom: 5px;
+        color: black;
+        > svg{
+            margin-right: 10px;
+        }
+    }
+}
+.gm-style .gm-style-iw-c {
+    background: #f4f5f7 !important;
+}
+.gm-style .gm-style-iw-d::-webkit-scrollbar-track, .gm-style .gm-style-iw-d::-webkit-scrollbar-track-piece {
+    background: #f4f5f7 !important;
+}
+.gm-style .gm-style-iw-tc::after {
+    background: #f4f5f7 !important;
+}
+
+
 .coin-app {
     display: flex;
     flex-direction: column;
@@ -559,7 +593,7 @@
 
         &.shape-default {
             // background: linear-gradient(150deg, shapes-default-color("step-1-gradient-bg") 15%, shapes-default-color("step-2-gradient-bg") 70%, shapes-default-color("step-3-gradient-bg") 94%);
-            background: black;
+            background: #1e1e1e;
         }
 
         &.shape-light {

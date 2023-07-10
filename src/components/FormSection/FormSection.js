@@ -56,8 +56,13 @@ const FormSection = () => {
           </span>
         </UncontrolledAlert> 
         }
-          <Row className="justify-content-center">
-            <Col lg="8">
+          <Row className="justify-content-between">
+            <Col lg="6">
+              <div className="contact-image">
+                <img src='https://crypto-react-steel.vercel.app/static/media/contact.e18df1c8e8d9ff3fd7b5.jpg' />
+              </div>
+            </Col>
+            <Col lg="6">
               <Card className="bg-gradient-secondary shadow">
                 <CardBody className="p-lg-5">
                   <h4 className="mb-1">Want to work with us?</h4>
@@ -72,7 +77,7 @@ const FormSection = () => {
                           <i className="ni ni-single-02" />
                         </InputGroupText>
                       </InputGroupAddon>
-                      <Input placeholder="Your name"   required name="user_name"  autocomplete="off"  type="text" />
+                      <Input placeholder="Your name"   required name="user_name"  autoComplete="off"  type="text" />
                     </InputGroup>
                   </Form.Group>
                   <Form.Group  controlId="validationCustom02" >
@@ -82,7 +87,7 @@ const FormSection = () => {
                           <i className="ni ni-email-83" />
                         </InputGroupText>
                       </InputGroupAddon>
-                      <Input placeholder="Email address" required name="user_email"   autocomplete="off"  type="email" />
+                      <Input placeholder="Email address" required name="user_email"   autoComplete="off"  type="email" />
                     </InputGroup>
                   </Form.Group>
                   <Form.Group className="mb-4"  controlId="validationCustom03">

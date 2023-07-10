@@ -1,7 +1,7 @@
 .footer {
-    background: $secondary;
+    background: $black;
     padding: 1.5rem 0;
-    // height: 350px;
+    color: #e6e6e6;
     .col-footer {
         .heading {
             color: $footer-heading-color;
@@ -12,20 +12,25 @@
             margin-bottom: 1rem;
         }
     }
-
+    hr{
+        border-top: 1px solid #ffffff3d;
+    }
+    .font-weight-light {
+        color: #fefefe69;
+    }
     .nav .nav-item .nav-link,
     .footer-link {
-        color: $footer-link-color !important;
-
+        color: #fefefee0 !important;
+        transition: 0.3s;
         &:hover {
-            color: $footer-link-hover-color !important;
+            opacity: 0.7;
         }
     }
 
     .list-unstyled li a {
         display: inline-block;
         padding: .125rem 0;
-        color: $footer-link-color;
+        color: #fefefee0;
         font-size: $footer-link-font-size;
 
         &:hover {

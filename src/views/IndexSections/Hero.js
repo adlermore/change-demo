@@ -25,25 +25,27 @@ class Hero extends React.Component {
     });
   };
 
-  // componentDidMount() {
-  //   this.vantaEffect = NET({
-  //     el: this.vantaRef.current,
-  //     mouseControls: true,
-  //     touchControls: true,
-  //     gyroControls: false,
-  //     minHeight: 700.00,
-  //     minWidth: 1300.00,
-  //     scale: 1.00,
-  //     scaleMobile: 1.00,
-  //     color: 0x9d9d9d,
-  //     backgroundColor: 0x1e1e1e,
-  //     points: 17.00,
-  //     maxDistance: 14.00
-  //   })
-  // }
-  // componentWillUnmount() {
-  //   if (this.vantaEffect) this.vantaEffect.destroy()
-  // }
+  componentDidMount() {
+    this.vantaEffect = NET({
+      el: this.vantaRef.current,
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 700.00,
+      minWidth: 1300.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x9d9d9d,
+      backgroundColor: 0x1e1e1e,
+      points: 17.00,
+      maxDistance: 14.00
+    })
+  }
+
+  componentWillUnmount() {
+    if (this.vantaEffect) this.vantaEffect.destroy()
+  }
+  
   render() {
 
     return (
