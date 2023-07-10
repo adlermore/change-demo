@@ -196,8 +196,9 @@ class MapSection extends React.Component {
             showingInfoWindow: true
         });
 
+        
     render() {
-          
+   
         return (
             <div className="map-section" id="map_section">
                 <Map
@@ -210,12 +211,12 @@ class MapSection extends React.Component {
                         lng: 44.515410501215165,
                     }}
                 >
-                    <Marker onClick={this.onMarkerClick}
-                        name={'Current location'} position={{ lat: 40.17938854038191, lng: 44.515410501215165 }} />
+                    <Marker 
+                    onClick={this.onMarkerClick}
+                        name={'Current location'} size={200} position={{ lat: 40.17938854038191, lng: 44.515410501215165 }} />
                     <InfoWindow 
                       marker={this.state.activeMarker}
                       visible={this.state.showingInfoWindow}>
-                        
                         <div>
                             <h1>test</h1>
                         </div>

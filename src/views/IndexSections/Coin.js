@@ -11,8 +11,24 @@ function Coin ({
   priceChange
 }) {
   return (
-    <div className='coin-container'>
-      <div className='coin-row'>
+    <div className='coin-container crypto-box '>
+      <div className="top">
+        <a href="#/">
+          <img src={image} alt='crypto' />
+          <span>{name}</span>
+          <span className="unit">{symbol}</span>
+        </a>
+      </div>
+      <h6 className="price display-4 ">USD {price}</h6>
+      <div className="bottom">
+        <p>${volume.toLocaleString()}</p>
+        {priceChange<0 ? (
+            <p className=' sale  critical coin-red'>{priceChange.toFixed(2)}%</p>
+          ) : (<p className=' sale  success coin-green'>{priceChange.toFixed(2)}%</p>
+          )}
+     
+      </div>
+      {/* <div className='coin-row'>
         <div className='coin'>
           <img src={image} alt='crypto' />
           <h1>{name}</h1>
@@ -27,7 +43,7 @@ function Coin ({
           )}
           <p className='coin-marketcap'> MKT Cap: ${marketcap.toLocaleString()}</p>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

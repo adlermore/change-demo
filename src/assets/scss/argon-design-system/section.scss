@@ -3,57 +3,68 @@
     padding-top: $spacer * 4;
     padding-bottom: $spacer * 4;
 }
-.order-btn{
+
+.order-btn {
     margin-top: 20px;
 }
-.viber_container{ 
+
+.viber_container {
     display: none;
+
     @include media-breakpoint-down(md) {
-       display: block;
+        display: block;
     }
 }
+
 .coin-app {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.carusel-section{
+.carusel-section {
     padding-bottom: 4rem;
 }
-.coin_section{
+
+.coin_section {
     padding-top: 0;
 }
-.footer_contacts_inner{
+
+.footer_contacts_inner {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin-top: 20px;
-    >div{
+
+    >div {
         display: block;
         white-space: nowrap;
     }
 }
 
-.slider-home img{
+.slider-home img {
     height: 400px;
     object-fit: cover;
 }
-.form-control{
+
+.form-control {
     padding-right: calc(1.5em + 1.25rem) !important;
     background-position: right calc(0.375em + 0.3125rem) center !important;
     background-size: calc(0.75em + 0.625rem) calc(0.75em + 0.625rem) !important;
-    &.form-control-alternative{
+
+    &.form-control-alternative {
         background-position: top calc(0.375em + 0.3125rem) right calc(0.375em + 0.3125rem) !important;
         resize: none;
         box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02) !important;
     }
 }
-.map-section{
+
+.map-section {
     width: 100%;
     height: 550px;
     position: relative;
-    iframe{
+
+    iframe {
         width: 100%;
         height: 100%;
     }
@@ -105,7 +116,139 @@
 }
 
 .hero_logo_img {
-    width: 500px;
+    width: 600px;
+    max-width: none;
+}
+
+.image-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.crypto-box {
+    background: white;
+    border-radius: 12px;
+    padding: 31px 40px;
+    overflow: hidden;
+    transition: 0.3s all ease-in-out;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    img {
+        max-width: 60px;
+        width: 100%;
+        height: auto;
+    }
+
+    &.active,
+    &:hover {
+        box-shadow: 0px 14px 64px 0px rgba(15, 15, 15, 0.1);
+        // background: #fff;
+        // filter: drop-shadow(rgba(128, 138, 157, 0.12) 0px 1px 2px) drop-shadow(rgba(128, 138, 157, 0.24) 0px 8px 32px);
+    }
+
+    .top {
+        margin-bottom: 9px;
+
+        a {
+            color: black;
+            font-weight: 700;
+            font-size: 22px;
+            // @include flex(center, flex-start);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            img {
+                display: block;
+                margin-right: 15px;
+            }
+
+            .unit {
+                margin-left: 9px;
+                color: #777e90;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .price {
+        margin-bottom: 11px;
+    }
+
+    .bottom {
+        display: flex;
+        align-items: center;
+
+        p {
+            font-size: 14px;
+        }
+
+        .sale {
+            font-size: 12px;
+            font-weight: 700;
+            color: #fff;
+            margin-left: 9px;
+            padding: 4px 8px 3px 9px;
+            border-radius: 24px;
+        }
+    }
+}
+
+.success {
+    background: #58bd7d;
+
+}
+
+.critical {
+    background: #d33535;
+}
+
+.coin-app {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.top-title-block {
+    margin: 30px 0;
+}
+
+.top-coins-contianer {
+    a img {
+        max-width: 60px;
+    }
+
+    padding: 0 40px;
+}
+
+.order-btn {
+    color: black !important;
+    transition: 0.3s;
+    border: none !important;
+
+    &:hover {
+        background: black;
+        color: white !important;
+    }
+}
+
+.image-inner-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .animation_block {
@@ -136,6 +279,11 @@
 .section-hero {
     @include media-breakpoint-up(md) {
         min-height: 500px;
+    }
+
+    .shape-container {
+        padding-top: 5rem !important;
+        padding-bottom: 3rem !important;
     }
 }
 

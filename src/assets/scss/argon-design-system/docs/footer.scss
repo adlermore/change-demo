@@ -1,8 +1,6 @@
-//
-// Footer
-//
+
 .ct-footer {
-    font-size: 85%;
+    font-size: 90%;
     text-align: center;
     background-color: #f7f7f7;
 
@@ -22,6 +20,39 @@
 
     @include media-breakpoint-up(sm) {
         text-align: left;
+    }
+}
+
+.footer-text-sup {
+    color: black !important;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.footer .footer-copyright {
+    font-size: 1rem;
+    color: #333333;
+    a{
+        color: #333333;
+        font-weight: 500;
+    }
+}
+.footer .nav-footer .nav-link {
+    font-size: 1rem;
+}
+
+.footer-social-list {
+    font-size: 18px;
+    font-weight: 600;
+
+    >div {
+        display: flex;
+        align-items: center;
+
+        >svg {
+            color: #333333;
+            margin-right: 10px;
+        }
     }
 }
 

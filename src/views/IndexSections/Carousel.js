@@ -36,13 +36,12 @@ class Carousel extends React.Component {
             <Row className="justify-content-between align-items-center">
               <Col className="mb-5 mb-lg-0" lg="5">
                 <h1 className="text-white font-weight-light">
-                  Buy / Sell cryptocurrency 
+                  Buy / Sell Cryptocurrency 
                 </h1>
                 <p className="lead text-white mt-4">
-                Buy and sell cryptocurrencies with low percentage. 
-                The office is located at Nalbandyan 7/1, next to Yerevan Square. 
+                Buy , sell and exchange cryptocurrencies with low percentage. 
+                The office is located at <b>Nalbandyan 7/1 </b>, next to Yerevan Square. 
                 The percentage will change if you become a permanent customer. 
-                For more questions please call us...
                 </p>
               </Col>
               <Col className="mb-lg-auto" lg="6">

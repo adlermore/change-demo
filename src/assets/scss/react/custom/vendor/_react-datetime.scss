@@ -64,16 +64,18 @@
     visibility: visible;
     width: 100%;
     height: 100%;
-    border-radius: 3px;
+    border-radius: 7px;
     position: absolute;
     top: 0;
     left: 0;
     display: flex;
+    color: white;
+    background: #797979;
     justify-content: center;
     align-items: center;
     font: normal normal normal 1em/1 "Nucleo";
     font-size: 18px;
-    content: "\EA5E";
+    content: "GET TIME";
   }
 }
 

@@ -15,6 +15,9 @@ import {
 } from "reactstrap";
 // import { FaViber } from 'react-icons/fa';
 import { FaTelegram } from 'react-icons/fa';
+import { GrLocation } from 'react-icons/gr';
+import { GrMailOption } from 'react-icons/gr';
+import { AiOutlinePhone } from 'react-icons/ai';
 
 class CardsFooter extends React.Component {
   render() {
@@ -24,15 +27,15 @@ class CardsFooter extends React.Component {
           <Container>
             <Row className="row-grid align-items-center my-md">
               <Col lg="6">
-                <h3 className="text-primary font-weight-light mb-2">
+                <h3 className="text-black footer-text-sup mb-2">
                   Thank you for supporting us!
                 </h3>
                 <h4 className="mb-0 font-weight-light">
-                  Let's get in touch on any of these platforms.
+                  Digital money your future...
                 </h4>
               </Col>
               <Col lg="6">
-                <Row className="col-text-lg-right btn-wrapper justify-content-end">
+                <Row className="col-text-lg-right footer-social btn-wrapper justify-content-end">
                   <Button
                     className="btn-icon-only rounded-circle"
                     color="twitter"
@@ -41,7 +44,6 @@ class CardsFooter extends React.Component {
                     target="_blank"
                   >
                     <span className="btn-inner--icon">
-                      {/* <i className="fa fa-twitter" /> */}
                       <FaTelegram />
                     </span>
                   </Button>
@@ -63,7 +65,7 @@ class CardsFooter extends React.Component {
                     Like us
                   </UncontrolledTooltip>
                   <Button
-                    className="btn-icon-only rounded-circle ml-1"
+                    className="btn-icon-only insta-btn rounded-circle ml-1"
                     color="dribbble"
                     href="https://www.instagram.com/cryptoexchangearmenia"
                     id="tooltip829810202"
@@ -77,7 +79,7 @@ class CardsFooter extends React.Component {
                     Follow us
                   </UncontrolledTooltip>
                   <Button
-                    className="btn-icon-only rounded-circle ml-1"
+                    className="btn-icon-only whatsapp-btn rounded-circle ml-1"
                     color="github"
                     href="https://wa.me/37455077111"
                     id="tooltip495507257"
@@ -91,17 +93,20 @@ class CardsFooter extends React.Component {
                     Call us
                   </UncontrolledTooltip>
                 </Row>
-                <Row className="footer_contacts_inner">
-                  <div className="addres_line">Nalbandyan 7/1, Yerevan, Armenia</div>
-                  <div className="mailLine">cryptoexchangearmenia@gmail.com</div>
-                  <div className="phoneNumber">+374 55 077111</div>
+                <Row className="footer_contacts_inner footer-social-list">
+                  <div className="addres_line">
+                    <GrLocation /> Nalbandyan 7/1, Yerevan, Armenia</div>
+                  <div className="mailLine">
+                    <GrMailOption /> cryptoexchangearmenia@gmail.com</div>
+                  <div className="phoneNumber">
+                    <AiOutlinePhone/>+374 55 077 111</div>
                 </Row>
               </Col>
             </Row>
             <hr />
             <Row className="align-items-center justify-content-md-between">
               <Col md="6">
-                <div className="copyright">
+                <div className="copyright footer-copyright">
                   © {new Date().getFullYear()}{" "}
                   <a
                     href="#/"

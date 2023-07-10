@@ -1,9 +1,14 @@
 import React from "react";
 import NET from 'vanta/dist/vanta.net.min';
 import classnames from "classnames";
-import { Container, Button, Card, CardBody, FormGroup, Form,
-Input, InputGroupAddon, InputGroupText, InputGroup, Modal,
-Row, Col,} from "reactstrap";
+import {
+  Container, Button, Card, CardBody, FormGroup, 
+  Input, InputGroupAddon, InputGroupText, InputGroup, Modal,
+  Row, Col,
+} from "reactstrap";
+import ReactDatetime from "react-datetime";
+import Form from 'react-bootstrap/Form';
+
 
 class Hero extends React.Component {
 
@@ -20,27 +25,27 @@ class Hero extends React.Component {
     });
   };
 
-  componentDidMount() {
-    this.vantaEffect = NET({
-      el: this.vantaRef.current,
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 700.00,
-      minWidth: 1300.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0x9d9d9d,
-      backgroundColor: 0x0,
-      points: 17.00,
-      maxDistance: 14.00
-    })
-  }
-  componentWillUnmount() {
-    if (this.vantaEffect) this.vantaEffect.destroy()
-  }
-
+  // componentDidMount() {
+  //   this.vantaEffect = NET({
+  //     el: this.vantaRef.current,
+  //     mouseControls: true,
+  //     touchControls: true,
+  //     gyroControls: false,
+  //     minHeight: 700.00,
+  //     minWidth: 1300.00,
+  //     scale: 1.00,
+  //     scaleMobile: 1.00,
+  //     color: 0x9d9d9d,
+  //     backgroundColor: 0x1e1e1e,
+  //     points: 17.00,
+  //     maxDistance: 14.00
+  //   })
+  // }
+  // componentWillUnmount() {
+  //   if (this.vantaEffect) this.vantaEffect.destroy()
+  // }
   render() {
+
     return (
       <>
         <div className="position-relative animatied-relative ">
@@ -49,15 +54,14 @@ class Hero extends React.Component {
             <Container className="shape-container d-flex align-items-center py-lg">
               <div className="col px-0">
                 <Row className="align-items-center justify-content-center">
-                  <Col className="text-center" lg="6">
+                  <Col className="text-center image-inner-block" lg="6">
                     <img
                       alt="..."
                       className="img-fluid hero_logo_img"
                       src={require("assets/img/brand/textlogo.png")}
                     />
                     <p className="lead text-white">
-                      Buy, sell and trade with Crypto Exchange Armenia Fast and secure transactions
-                      with a low-interest rate
+                      Buy, sell and exchange with <b>Crypto Exchange Armenia</b>
                     </p>
                     <Button
                       className="btn-1 btn-neutral ml-1 btn btn-default order-btn"
@@ -73,7 +77,7 @@ class Hero extends React.Component {
                     >
                       <div className="modal-header">
                         <h6 className="modal-title" id="modal-title-default">
-                          Visit Now
+                          Order Form
                         </h6>
                         <button
                           aria-label="Close"
@@ -89,7 +93,7 @@ class Hero extends React.Component {
                         <Card className="bg-secondary shadow border-0">
                           <CardBody className="px-lg-5 py-lg-5">
                             <div className="text-center text-muted mb-4">
-                              <small>Or sign in with credentials</small>
+                              Get date for exchange
                             </div>
                             <Form role="form">
                               <FormGroup
@@ -97,6 +101,42 @@ class Hero extends React.Component {
                                   focused: this.state.emailFocused,
                                 })}
                               >
+                                <InputGroup className="input-group-alternative">
+                                  <InputGroupAddon addonType="prepend">
+                                    <InputGroupText>
+                                      <i className="ni " />
+                                    </InputGroupText>
+                                  </InputGroupAddon>
+                                  <Input
+                                    placeholder="Name !!!"
+                                    type="text"
+                                    autoComplete="off"
+                                    onFocus={(e) =>
+                                      this.setState({ textFocused: true })
+                                    }
+                                    onBlur={(e) =>
+                                      this.setState({ textFocused: false })
+                                    }
+                                  />
+                                </InputGroup>
+                                <InputGroup className="input-group-alternative">
+                                  <InputGroupAddon addonType="prepend">
+                                    <InputGroupText>
+                                      <i className="ni ni-phone" />
+                                    </InputGroupText>
+                                  </InputGroupAddon>
+                                  <Input
+                                    placeholder="Phone Number !!!"
+                                    type="text"
+                                    autoComplete="off"
+                                    onFocus={(e) =>
+                                      this.setState({ passwordFocused: true })
+                                    }
+                                    onBlur={(e) =>
+                                      this.setState({ passwordFocused: false })
+                                    }
+                                  />
+                                </InputGroup>
                                 <InputGroup className="input-group-alternative">
                                   <InputGroupAddon addonType="prepend">
                                     <InputGroupText>
@@ -114,58 +154,49 @@ class Hero extends React.Component {
                                     }
                                   />
                                 </InputGroup>
+                                <FormGroup>
+                                  <InputGroup className="input-group-alternative">
+                                    <InputGroupAddon addonType="prepend">
+                                      <InputGroupText>
+                                        <i className="ni ni-calendar-grid-58" />
+                                      </InputGroupText>
+                                    </InputGroupAddon>
+                                    <ReactDatetime
+                                      inputProps={{
+                                        placeholder: "Date Picker Here"
+                                      }}
+                                      timeFormat={false}
+                                    />
+                                  </InputGroup>
+                                </FormGroup>
+                                <Form.Select className="form-control" aria-label="Default select example">
+                                  <option>Open this select menu</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </Form.Select>
                               </FormGroup>
-                              <FormGroup
-                                className={classnames({
-                                  focused: this.state.passwordFocused,
-                                })}
-                              >
-                                <InputGroup className="input-group-alternative">
+                              <InputGroup className="input-group-alternative">
                                   <InputGroupAddon addonType="prepend">
                                     <InputGroupText>
-                                      <i className="ni " />
+                                      <i className="ni ni-email-83" />
                                     </InputGroupText>
                                   </InputGroupAddon>
                                   <Input
-                                    placeholder="Name"
-                                    type="text"
-                                    autoComplete="off"
+                                    placeholder="Email"
+                                    type="number"
                                     onFocus={(e) =>
-                                      this.setState({ passwordFocused: true })
+                                      this.setState({ emailFocused: true })
                                     }
                                     onBlur={(e) =>
-                                      this.setState({ passwordFocused: false })
+                                      this.setState({ emailFocused: false })
                                     }
                                   />
                                 </InputGroup>
-                              </FormGroup>
-                              <FormGroup
-                                className={classnames({
-                                  focused: this.state.passwordFocused,
-                                })}
-                              >
-                                <InputGroup className="input-group-alternative">
-                                  <InputGroupAddon addonType="prepend">
-                                    <InputGroupText>
-                                      <i className="ni ni-phone" />
-                                    </InputGroupText>
-                                  </InputGroupAddon>
-                                  <Input
-                                    placeholder="Phone Number"
-                                    type="text"
-                                    autoComplete="off"
-                                    onFocus={(e) =>
-                                      this.setState({ passwordFocused: true })
-                                    }
-                                    onBlur={(e) =>
-                                      this.setState({ passwordFocused: false })
-                                    }
-                                  />
-                                </InputGroup>
-                              </FormGroup>
+                            
                               <div className="text-center">
                                 <Button className="my-4" color="primary" type="button">
-                                  Visit Now
+                                  Send Order
                                 </Button>
                               </div>
                             </Form>
