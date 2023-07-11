@@ -43,7 +43,7 @@ const FormSection = () => {
 
   return (
     <>
-      <section className="section section-lg section-contact-us">
+      <section className="section section-lg section-contact-us" id="contacts-section">
         <Container>
 
         {alertshow &&
@@ -58,8 +58,8 @@ const FormSection = () => {
         }
           <Row className="justify-content-between">
             <Col lg="6">
-              <div className="contact-image">
-                <img src='https://crypto-react-steel.vercel.app/static/media/contact.e18df1c8e8d9ff3fd7b5.jpg' />
+              <div className="contact-image shadow ">
+                <img src='https://crypto-react-steel.vercel.app/static/media/contact.e18df1c8e8d9ff3fd7b5.jpg' alt="" />
               </div>
             </Col>
             <Col lg="6">

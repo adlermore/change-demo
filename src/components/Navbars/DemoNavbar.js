@@ -29,6 +29,21 @@ class DemoNavbar extends React.Component {
     }
   };
 
+  
+  handleClickScrolltwo = () => {
+    const element = document.getElementById('contacts-section');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
+
+  handleClickScrolltree = () => {
+    const element = document.getElementById('about-section');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
+  
   componentDidMount() {
     let headroom = new Headroom(document.getElementById("navbar-main"));
     // initialise
@@ -99,13 +114,13 @@ class DemoNavbar extends React.Component {
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
                       <i className="ni ni-ui-04 d-lg-none mr-1" />
-                      <span className="nav-link-inner--text">ABOUT US</span>
+                      <span className="nav-link-inner--text"  onClick={this.handleClickScrolltree}>ABOUT US</span>
                     </DropdownToggle>
                   </UncontrolledDropdown>
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
                       <i className="ni ni-collection d-lg-none mr-1" />
-                      <span className="nav-link-inner--text">CONTACT US</span>
+                      <span className="nav-link-inner--text" onClick={this.handleClickScrolltwo}>CONTACT US</span>
                     </DropdownToggle>
                   </UncontrolledDropdown>
                   <UncontrolledDropdown nav>
@@ -151,7 +166,7 @@ class DemoNavbar extends React.Component {
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
-                      href="https://t.me/narekhovhannisyan7"
+                      href="https://t.me/cryptoexchangearmenia"
                       id="tooltip184698708"
                       target="_blank"
                     >

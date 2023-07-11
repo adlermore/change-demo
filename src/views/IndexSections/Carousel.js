@@ -23,7 +23,7 @@ class Carousel extends React.Component {
   render() {
     return (
       <>
-        <section className="section section-shaped carusel-section">
+        <section className="section section-shaped carusel-section" id="about-section">
           <div className="shape shape-style-1 shape-default">
             <span />
             <span />

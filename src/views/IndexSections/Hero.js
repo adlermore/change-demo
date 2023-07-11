@@ -53,7 +53,7 @@ class Hero extends React.Component {
         <div className="position-relative animatied-relative ">
           <div ref={this.vantaRef} className="animation_block" ></div>
           <section className="section section-hero section-shaped">
-            <Container className="shape-container d-flex align-items-center py-lg">
+            <Container className="shape-container d-flex align-items-center py-lg hero-shape-inner">
               <div className="col px-0">
                 <Row className="align-items-center justify-content-center">
                   <Col className="text-center image-inner-block" lg="6">
@@ -106,7 +106,7 @@ class Hero extends React.Component {
                                 <InputGroup className="input-group-alternative">
                                   <InputGroupAddon addonType="prepend">
                                     <InputGroupText>
-                                      <i className="ni " />
+                                      <i className="ni ni-single-02" />
                                     </InputGroupText>
                                   </InputGroupAddon>
                                   <Input
@@ -124,7 +124,7 @@ class Hero extends React.Component {
                                 <InputGroup className="input-group-alternative">
                                   <InputGroupAddon addonType="prepend">
                                     <InputGroupText>
-                                      <i className="ni ni-phone" />
+                                      <i className="ni ni-mobile-button" />
                                     </InputGroupText>
                                   </InputGroupAddon>
                                   <Input
@@ -172,20 +172,23 @@ class Hero extends React.Component {
                                   </InputGroup>
                                 </FormGroup>
                                 <Form.Select className="form-control" aria-label="Default select example">
-                                  <option>Open this select menu</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
+                                  <option className="ni ni-money-coins"> Select Coin</option>
+                                  <option value="1">Bitcoin</option>
+                                  <option value="2">Ethereum</option>
+                                  <option value="3">Tether</option>
+                                  <option value="4">BNB</option>
+                                  <option value="4">USD Coin</option>
+                                  <option value="4">XRP</option>
                                 </Form.Select>
                               </FormGroup>
                               <InputGroup className="input-group-alternative">
                                   <InputGroupAddon addonType="prepend">
                                     <InputGroupText>
-                                      <i className="ni ni-email-83" />
+                                      <i className="ni ni-money-coins" />
                                     </InputGroupText>
                                   </InputGroupAddon>
                                   <Input
-                                    placeholder="Email"
+                                    placeholder="Select Coin Count"
                                     type="number"
                                     onFocus={(e) =>
                                       this.setState({ emailFocused: true })
@@ -217,8 +220,7 @@ class Hero extends React.Component {
                 version="1.1"
                 viewBox="0 0 2560 100"
                 x="0"
-                y="0"
-              >
+                y="0">
                 <polygon
                   className="fill-white"
                   points="2560 0 2560 100 0 100"

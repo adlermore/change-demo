@@ -1,17 +1,16 @@
 import React from 'react';
 import './Coin.css'
 
-function Coin ({
+function Coin({
   name,
   price,
   symbol,
-  marketcap,
   volume,
   image,
   priceChange
 }) {
   return (
-    <div className='coin-container crypto-box '>
+    <div className='coin-container crypto-box shadow '>
       <div className="top">
         <a href="#/">
           <img src={image} alt='crypto' />
@@ -19,31 +18,16 @@ function Coin ({
           <span className="unit">{symbol}</span>
         </a>
       </div>
+      <div className=" bottom box-second">
       <h6 className="price display-4 ">USD {price}</h6>
-      <div className="bottom">
-        <p>${volume.toLocaleString()}</p>
-        {priceChange<0 ? (
-            <p className=' sale  critical coin-red'>{priceChange.toFixed(2)}%</p>
-          ) : (<p className=' sale  success coin-green'>{priceChange.toFixed(2)}%</p>
-          )}
-     
+      {priceChange < 0 ? (
+          <p className=' sale  critical coin-red'>{priceChange.toFixed(2)}%</p>
+        ) : (<p className=' sale  success coin-green'>{priceChange.toFixed(2)}%</p>
+        )}
       </div>
-      {/* <div className='coin-row'>
-        <div className='coin'>
-          <img src={image} alt='crypto' />
-          <h1>{name}</h1>
-          <p className='coin-symbol'>{symbol}</p>
-        </div>
-        <div className='coin-data'>
-          <p className='coin-price'>${price}</p>
-          <p className='coin-volume'>${volume.toLocaleString()}</p>
-          {priceChange<0 ? (
-            <p className='coin-red'>{priceChange.toFixed(2)}%</p>
-          ) : (<p className='coin-green'>{priceChange.toFixed(2)}%</p>
-          )}
-          <p className='coin-marketcap'> MKT Cap: ${marketcap.toLocaleString()}</p>
-        </div>
-      </div> */}
+      <div className="bottom">
+        <p className="coinbox-bottom">${volume.toLocaleString()}</p>
+      </div>
     </div>
   )
 }

@@ -20,6 +20,33 @@ import { GrMailOption } from 'react-icons/gr';
 import { AiOutlinePhone } from 'react-icons/ai';
 
 class CardsFooter extends React.Component {
+
+  handleClickScroll = (e) => {
+    e.preventDefault();
+    const element = document.getElementById('map_section');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
+
+  
+  handleClickScrolltwo = (e) => {
+    e.preventDefault();
+    const element = document.getElementById('contacts-section');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
+
+  handleClickScrolltree = (e) => {
+    e.preventDefault();
+    const element = document.getElementById('about-section');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
+
+
   render() {
     return (
       <>
@@ -110,13 +137,9 @@ class CardsFooter extends React.Component {
               <Col md="6">
                 <div className="copyright footer-copyright">
                   © {new Date().getFullYear()}{" "}
-                  <a
-                    href="#/"
-                    target="_blank"
-                  >
+                  <span >
                     Crypto Exchange Armenia
-                  </a>
-                  .
+                  </span>
                 </div>
               </Col>
               <Col md="6">
@@ -124,7 +147,7 @@ class CardsFooter extends React.Component {
                   <NavItem>
                     <NavLink
                       href="#/"
-                      target="_blank"
+                      onClick={(e)=>this.handleClickScrolltwo(e)}
                     >
                       Contact Us
                     </NavLink>
@@ -132,7 +155,7 @@ class CardsFooter extends React.Component {
                   <NavItem>
                     <NavLink
                       href="#/"
-                      target="_blank"
+                      onClick={(e)=>this.handleClickScrolltree(e)}
                     >
                       About Us
                     </NavLink>
@@ -140,7 +163,7 @@ class CardsFooter extends React.Component {
                   <NavItem>
                     <NavLink
                       href="#/"
-                      target="_blank"
+                      onClick={(e)=>this.handleClickScroll(e)}
                     >
                       Map
                     </NavLink>

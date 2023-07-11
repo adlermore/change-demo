@@ -23,9 +23,9 @@ function CoinSection() {
       .catch((error) => console.log(error));
   }, []);
 
-  const handleChange = (e) => {
-    setSearch(e.target.value);
-  };
+  // const handleChange = (e) => {
+  //   setSearch(e.target.value);
+  // };
 
   const filteredCoins = coins.filter((coin) =>
     coin.name.toLowerCase().includes(search.toLowerCase())

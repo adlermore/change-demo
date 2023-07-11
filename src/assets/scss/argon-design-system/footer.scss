@@ -40,6 +40,12 @@
 
     .copyright {
         font-size: $font-size-sm;
+        display: flex;
+        align-items: center;
+        span{
+            display: block;
+            margin-left: 10px;
+        }
     }
 
     .dropdown {
