@@ -6,7 +6,7 @@ import { GrMailOption } from 'react-icons/gr';
 import { AiOutlinePhone } from 'react-icons/ai';
 
 
-const mapStyles = [
+const mapStyles = [ 
   {
     "elementType": "geometry",
     "stylers": [
@@ -346,7 +346,10 @@ class MapSection extends Component {
           }}
           onIdle={this.handleMapIdle}>
           {this.state.mapLoaded && (
-            <Marker ref={this.onMarkerMounted} onClick={this.onMarkerClick} />
+            <Marker 
+            ref={this.onMarkerMounted} 
+            onClick={this.onMarkerClick} 
+            />
           )}
           <InfoWindow
             marker={this.state.activeMarker}

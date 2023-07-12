@@ -2,7 +2,7 @@ import React from "react";
 import NET from 'vanta/dist/vanta.net.min';
 import classnames from "classnames";
 import {
-  Container, Button, Card, CardBody, FormGroup, 
+  Container, Button, Card, CardBody, FormGroup, Badge,
   Input, InputGroupAddon, InputGroupText, InputGroup, Modal,
   Row, Col,
 } from "reactstrap";
@@ -25,22 +25,22 @@ class Hero extends React.Component {
     });
   };
 
-  componentDidMount() {
-    this.vantaEffect = NET({
-      el: this.vantaRef.current,
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 700.00,
-      minWidth: 1300.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0x9d9d9d,
-      backgroundColor: 0x1e1e1e,
-      points: 17.00,
-      maxDistance: 14.00
-    })
-  }
+  // componentDidMount() {
+  //   this.vantaEffect = NET({
+  //     el: this.vantaRef.current,
+  //     mouseControls: true,
+  //     touchControls: true,
+  //     gyroControls: false,
+  //     minHeight: 700.00,
+  //     minWidth: 1300.00,
+  //     scale: 1.00,
+  //     scaleMobile: 1.00,
+  //     color: 0x9d9d9d,
+  //     backgroundColor: 0x1e1e1e,
+  //     points: 17.00,
+  //     maxDistance: 14.00
+  //   })
+  // }
 
   componentWillUnmount() {
     if (this.vantaEffect) this.vantaEffect.destroy()
@@ -229,6 +229,67 @@ class Hero extends React.Component {
             </div>
           </section>
         </div>
+        <section className="section section-lg pt-lg-0 mt--200">
+            <Container>
+              <Row className="justify-content-center">
+                <Col lg="12">
+                  <Row className="row-grid">
+                    <Col lg="4">
+                      <Card className="card-lift--hover shadow border-0">
+                        <CardBody className="py-5">
+                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                            <i className="ni ni-check-bold" />
+                          </div>
+                          <h6 className="text-primary text-uppercase">
+                            Download Argon
+                          </h6>
+                          <p className="description mt-3">
+                            Argon is a great free UI package based on Bootstrap
+                            4 that includes the most important components and
+                            features.
+                          </p>
+                        </CardBody>
+                      </Card>
+                    </Col>
+                    <Col lg="4">
+                      <Card className="card-lift--hover shadow border-0">
+                        <CardBody className="py-5">
+                          <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
+                            <i className="ni ni-istanbul" />
+                          </div>
+                          <h6 className="text-success text-uppercase">
+                            Build Something
+                          </h6>
+                          <p className="description mt-3">
+                            Argon is a great free UI package based on Bootstrap
+                            4 that includes the most important components and
+                            features.
+                          </p>
+                        </CardBody>
+                      </Card>
+                    </Col>
+                    <Col lg="4">
+                      <Card className="card-lift--hover shadow border-0">
+                        <CardBody className="py-5">
+                          <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                            <i className="ni ni-planet" />
+                          </div>
+                          <h6 className="text-warning text-uppercase">
+                            Prepare Launch
+                          </h6>
+                          <p className="description mt-3">
+                            Argon is a great free UI package based on Bootstrap
+                            4 that includes the most important components and
+                            features.
+                          </p>
+                        </CardBody>
+                      </Card>
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+            </Container>
+          </section>
       </>
     );
   }
