@@ -28,7 +28,6 @@ class Index extends React.Component {
           <Carousel />
           <CoinSection />
           <MapSection />
-
           <FormSection />
         </main>
         <CardsFooter />

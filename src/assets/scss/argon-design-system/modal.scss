@@ -24,3 +24,20 @@
     }
 }
 
+
+.modal-open .modal {
+    background: #00000091;
+    .modal-content{
+        border-radius: 12px;
+    }
+    .modal-header {
+        padding: 1rem 1.25rem;
+        .close{
+            padding: 1rem;
+            margin: -1rem -1rem -2rem auto;
+        }
+    }
+    .modal-title {
+        font-weight: 700;
+    }
+}

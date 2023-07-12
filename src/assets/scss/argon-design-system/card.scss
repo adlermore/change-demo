@@ -96,7 +96,64 @@
 
 .card-lift--hover {
     &:hover {
-        transform: translateY(-20px);
+        transform: translateY(-10px);
         @include transition($transition-base);
+    }
+}
+
+
+.about-container {
+    margin-bottom: 0;
+    padding-bottom: 0px;
+    margin-top: 60px;
+    padding-bottom: 10px !important;
+}
+
+.abount-inner-container{
+    padding: 33px;
+    margin: 0;
+    backdrop-filter: blur(4px);
+    background: #18191d;
+    border-radius: 24px;
+    border: 1px solid #23262f;
+    .card{
+        background: black;
+        border-radius: 13px;
+    }
+    .abount-description{
+        font-size: 20px;
+        color: #ffffffb5;
+        height: 100px;
+        line-height: 26px;
+    }
+    .about-title{
+        font-size: 26px;
+        color: #f0f0f0;
+        line-height: 29px;
+    }
+    .icon-about{
+        width: 5rem;
+        height: 5rem;
+    }   
+
+    .icon-about-first{
+        background: #f7931a;
+        svg path {
+            stroke: white;
+        }
+    }
+    .icon-about-second{
+        background: #2775ca;
+        color: white;
+        svg path {
+            stroke: white;
+        }
+    }
+    .icon-about-last{
+        background: #55a032;
+        color: white;
+        svg path {
+            stroke: white;
+        }
     }
 }
