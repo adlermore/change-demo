@@ -130,6 +130,174 @@
     margin-bottom: 10px;
 }
 
+.hero-modal {
+
+    .was-validated .notValidationInput .form-control:valid,
+    .notValidationInput .form-control.is-valid {
+        background-image: none !important;
+    }
+
+    .notValidationInput {
+        background-image: none !important;
+        border-color: #cad1d7 !important;
+    }
+
+    .form-group {
+        margin-bottom: 0 !important;
+    }
+
+    .input-group {
+        margin-bottom: 15px;
+    }
+
+    .btn-round {
+        margin-bottom: 20px;
+        margin-top: 10px;
+        background: black;
+        border: none;
+        height: 43px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        transition: 0.3s;
+        color: white;
+
+        &:hover {
+            background: #f4f5f7;
+            color: black;
+        }
+    }
+
+    .btn-center {
+        display: flex;
+        justify-content: center;
+    }
+
+    .input-group .input-group-prepend+.rdt .form-control {
+        border-right: none;
+    }
+
+    .modal-header {
+        background: #f4f5f7;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .first-modal-inner {
+        background: #fff;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .form-control {
+        background-color: #f4f5f7;
+    }
+
+    .input-group-text {
+        background-color: #f4f5f7;
+    }
+}
+
+.hero-modal-header {
+    background-color: #f4f5f7;
+    border-radius: 12px 12px 0 0;
+}
+
+
+.carusel-section .shape-default span.decorImg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 450px;
+    width: 100%;
+    height: 375px;
+    opacity: 0.8;
+    background: url('../../img/brand/decorImg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 0 !important;
+}
+.sucsess_mode{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    background: white;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .svg_block{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        font-size: 169px;
+        background: #4fd69c;
+        color: white;
+    }
+    .succsess_text {
+        padding: 20px;
+        padding-bottom: 15px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .sucsess_title{
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+    .sucsess_desc{
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+.active {
+
+    .sucsess_mode{
+        opacity: 1;
+        pointer-events:all;
+    }
+} 
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+    color: white !important;
+    background-color: black !important;
+    border-color: transparent !important;
+}
+
+.section-contact-us{
+    .contact-btn{
+        background: #f4f5f7;
+        color: #32325d;
+        border: none;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        transition: 0.3s;
+        &:hover{
+            background: black;
+            color: white;
+        }
+    }
+    .btn-hr{
+        padding-bottom: 10px;
+    }
+    .bg-gradient-secondary{
+        height: 100%;
+    }
+}
+
 .coin-search {
     margin-bottom: 50px;
     display: flex;
@@ -143,7 +311,8 @@
         position: relative;
     }
 }
-.first-modal-inner{
+
+.first-modal-inner {
     padding: 15px 35px;
 }
 

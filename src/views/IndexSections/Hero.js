@@ -1,24 +1,15 @@
 import React from "react";
 import NET from 'vanta/dist/vanta.net.min';
-import classnames from "classnames";
-import {
-  Container, Button, Card, CardBody, FormGroup, 
-  Input, InputGroupAddon, InputGroupText, InputGroup, Modal,
-  Row, Col,
-} from "reactstrap";
-import ReactDatetime from "react-datetime";
-import Form from 'react-bootstrap/Form';
-import { FaBitcoin } from 'react-icons/fa';
-
+import {  Container, Button,  Modal,  Row, Col,} from "reactstrap";
+import HeroModal from "../../components/FormSection/HeroModal";
 
 class Hero extends React.Component {
-
   constructor() {
     super()
     this.vantaRef = React.createRef()
   }
 
-  state = {};
+  state={};
 
   toggleModal = (state) => {
     this.setState({
@@ -78,7 +69,7 @@ class Hero extends React.Component {
                       isOpen={this.state.formModal}
                       toggle={() => this.toggleModal("formModal")}
                     >
-                      <div className="modal-header">
+                      <div className="modal-header hero-modal-header">
                         <h6 className="modal-title" id="modal-title-default">
                           Order Form
                         </h6>
@@ -93,96 +84,7 @@ class Hero extends React.Component {
                         </button>
                       </div>
                       <div className="modal-body p-0">
-                        <Card className="bg-secondary shadow border-0">
-                          <CardBody className="first-modal-inner">
-                            <div className="text-center text-muted mb-4">
-                              Get date for exchange
-                            </div>
-                            <Form role="form">
-                              <FormGroup
-                                className={classnames("mb-3", {
-                                  focused: this.state.emailFocused,
-                                })}
-                              >
-                                <InputGroup className="input-group-alternative">
-                                  <InputGroupAddon addonType="prepend">
-                                    <InputGroupText>
-                                      <i className="ni ni-single-02" />
-                                    </InputGroupText>
-                                  </InputGroupAddon>
-                                  <Input
-                                    placeholder="Name !!!"
-                                    type="text"
-                                    autoComplete="off"
-                                  />
-                                </InputGroup>
-                                <InputGroup className="input-group-alternative">
-                                  <InputGroupAddon addonType="prepend">
-                                    <InputGroupText>
-                                      <i className="ni ni-mobile-button" />
-                                    </InputGroupText>
-                                  </InputGroupAddon>
-                                  <Input
-                                    placeholder="Phone Number !!!"
-                                    type="text"
-                                    autoComplete="off"
-                                  />
-                                </InputGroup>
-                                <InputGroup className="input-group-alternative">
-                                  <InputGroupAddon addonType="prepend">
-                                    <InputGroupText>
-                                      <i className="ni ni-email-83" />
-                                    </InputGroupText>
-                                  </InputGroupAddon>
-                                  <Input
-                                    placeholder="Email"
-                                    type="email"
-                                  />
-                                </InputGroup>
-                                <FormGroup>
-                                  <InputGroup className="input-group-alternative">
-                                    <InputGroupAddon addonType="prepend">
-                                      <InputGroupText>
-                                        <i className="ni ni-calendar-grid-58" />
-                                      </InputGroupText>
-                                    </InputGroupAddon>
-                                    <ReactDatetime
-                                      inputProps={{
-                                        placeholder: "Date Picker Here"
-                                      }}
-                                      timeFormat={false}
-                                    />
-                                  </InputGroup>
-                                </FormGroup>
-                                <Form.Select className="form-control" aria-label="Default select example">
-                                  <option className="ni ni-money-coins"> Select Coin</option>
-                                  <option value="1"  selected>Bitcoin</option>
-                                  <option value="2"> Ethereum</option>
-                                  <option value="3"> Tether</option>
-                                  <option value="4"> BNB</option>
-                                  <option value="4"> USD Coin</option>
-                                  <option value="4"> XRP</option>
-                                </Form.Select>
-                              </FormGroup>
-                              <InputGroup className="input-group-alternative">
-                                  <InputGroupAddon addonType="prepend">
-                                    <InputGroupText>
-                                      <i className="ni ni-money-coins" />
-                                    </InputGroupText>
-                                  </InputGroupAddon>
-                                  <Input
-                                    placeholder="Select Coin Count"
-                                    type="number"
-                                  />
-                                </InputGroup>
-                              <div className="text-center">
-                                <Button className="my-4" color="primary" type="button">
-                                  Send Order
-                                </Button>
-                              </div>
-                            </Form>
-                          </CardBody>
-                        </Card>
+                        <HeroModal/>
                       </div>
                     </Modal>
                   </Col>

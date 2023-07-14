@@ -33,7 +33,7 @@ const FormSection = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_evhmkfd', 'template_hd9ym9t', formCurr.current, 'WmD5TotMNbvtn8RJe')
+    emailjs.sendForm('service_pak5ekv', 'template_6yx6l8m', formCurr.current, '7z903eOIvu2d2tmxL')
       .then((result) => {
         console.log(result.text);
       }, (error) => {
@@ -45,7 +45,6 @@ const FormSection = () => {
     <>
       <section className="section section-lg section-contact-us" id="contacts-section">
         <Container>
-
         {alertshow &&
         <UncontrolledAlert color="success" fade={true}>
           <span className="alert-inner--icon">
@@ -94,8 +93,8 @@ const FormSection = () => {
                     <Input  className="form-control-alternative" cols="80" required  name="message" 
                       placeholder="Type a message..." rows="4" type="textarea" />
                   </Form.Group>
-                  <div>
-                    <Button    className="btn-round" color="default" size="lg" type="submit" disabled={alertshow} >
+                  <div className="btn-hr">
+                    <Button    className="btn-round contact-btn" color="default" size="lg" type="submit" disabled={alertshow} >
                       Send Message
                     </Button>
                   </div>
