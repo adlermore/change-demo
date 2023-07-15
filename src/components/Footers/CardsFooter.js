@@ -133,7 +133,7 @@ class CardsFooter extends React.Component {
               </Col>
             </Row>
             <hr />
-            <Row className="align-items-center justify-content-md-between">
+            <Row className="align-items-center footer-botoom justify-content-md-between">
               <Col md="6">
                 <div className="copyright footer-copyright">
                   © {new Date().getFullYear()}{" "}

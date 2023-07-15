@@ -7,13 +7,14 @@ class Download extends React.Component {
   render() {
     return (
       <>
-        <section className="section section-lg bg-secondary">
+        <section className="section  first-about-block section-lg bg-secondary">
           <Container>
             <Row className="row-grid justify-content-center">
-            
               <Col lg="6">
                 <div className="image-block">
-                  <img src="https://images.moneycontrol.com/static-mcnews/2022/09/Cryptocurrency-1.png?impolicy=website&width=1600&height=900" />
+                  <img src={`https://images.moneycontrol.com/static-mcnews/2022/09/Cryptocurrency-1.png?impolicy=website&width=1600&height=900`}
+                  alt=""
+                  />
                 </div>
               </Col>
               <Col className="text-center" lg="6">
@@ -23,11 +24,11 @@ class Download extends React.Component {
                   </span>
                 </h2>
                 <p className="lead">
-                Cryptocurrency, sometimes called crypto-currency or crypto, is any 
-                form of currency that exists digitally or virtually and uses 
-                cryptography to secure transactions. Cryptocurrencies don't 
-                have a central issuing or regulating authority, instead using 
-                a decentralized system to record transactions and issue new units.
+                  Cryptocurrency, sometimes called crypto-currency or crypto, is any 
+                  form of currency that exists digitally or virtually and uses 
+                  cryptography to secure transactions. Cryptocurrencies don't 
+                  have a central issuing or regulating authority, instead using 
+                  a decentralized system to record transactions and issue new units.
                 </p>
                 <div className="text-center">
                   <h4 className="display-4 top-title-block">

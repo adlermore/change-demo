@@ -98,6 +98,13 @@
     }
 }
 
+.first-about-block{
+    .image-block {
+        border-radius: 12px;
+        overflow: hidden;
+    }
+}
+
 .slider-home img {
     height: 400px;
     object-fit: cover;
@@ -202,19 +209,11 @@
 }
 
 
-.carusel-section .shape-default span.decorImg {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    max-width: 450px;
-    width: 100%;
-    height: 375px;
-    opacity: 0.8;
+.carusel-section{
     background: url('../../img/brand/decorImg.png');
-    background-position: center;
+    background-position: right bottom;
     background-repeat: no-repeat;
-    background-size: 100%;
-    border-radius: 0 !important;
+    background-size: 25%;
 }
 .sucsess_mode{
     position: absolute;
@@ -950,6 +949,182 @@
         width: 512px;
         height: 352px;
         margin: 115px 50px 0;
+    }
+}
+@media (max-width:1200px) {
+    .hero_logo_img {
+        width: 450px
+    }
+    .abount-inner-container .icon-about {
+        width: 3rem;
+        height: 3rem;
+    }
+    .abount-inner-container {
+        .abount-description {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.7098039216);
+            height: 100px;
+            line-height: 22px;
+        }
+        .about-title {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    } 
+    .crypto-box {
+        padding: 20px;
+    }
+}
+
+@media (max-width:991px) {
+    .animatied-relative {
+        .section-hero {
+            .hero-shape-inner {
+                padding-bottom: 6rem !important;
+            }
+            .shape-container {
+                padding-top: 3rem !important;
+                padding-bottom: 3rem !important;
+            }
+        }
+    } 
+    .navbar-collapse.collapsing, .navbar-collapse.show {
+        padding: 1.5rem;
+        border-radius: 12px;
+        background: #e6e7eb;
+    }
+    .navbar-transparent .navbar-nav .nav-link {
+        display: flex;
+        align-items: center;
+    }
+    .section-lg {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .top-coins-contianer  .col-4{
+        margin-bottom: 20px;
+    }
+    .abount-inner-container .abount-description {
+        height: auto;
+    }
+    .carusel-section{
+        .about-text-block{
+            text-align: center;
+        }
+    }
+    .coin-app {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .section-contact-us .contact-image {
+        margin-bottom: 30px;
+    }
+    .footer {
+        .footer-social  {
+            justify-content: flex-start !important;
+
+        }
+        .footer_contacts_inner {
+            align-items: flex-start;
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .footer {
+        text-align: center;
+        .footer-social {
+            justify-content: center !important;
+        }
+        .footer_contacts_inner {
+            align-items: center;
+        }
+        
+        .footer-botoom{
+            flex-direction: column-reverse;
+            justify-content: center;
+            .col-md-6{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .nav-footer {
+            padding-bottom: 20px;
+        }
+        hr {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+    }
+    .crypto-box {
+        img {
+            max-width: 45px;
+        }
+        .crypto-box .top a {
+            color: black;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        .price {
+            margin-bottom: 10px;
+            font-size: 18px;
+            line-height: 20px;
+        }
+    } 
+}
+@media (max-width:575px) {
+    .hero_logo_img {
+        width: 280px;
+    }
+    .separator-bottom {
+        top: auto;
+        bottom: -1px;
+    }
+    .section {
+        position: relative;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .about-container {
+        margin-top: 30px;
+    }
+    .abount-inner-container {
+        padding: 20px;
+    }
+    .row.row-grid > [class*=col-] + [class*=col-] {
+        margin-top: 1.5rem;
+    }
+    .carusel-section {
+        background-size: 50%;
+    }
+    .coin-app {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        .pb-7, .py-7 {
+            padding-bottom: 3rem !important;
+            padding-top: 3rem !important;
+        }
+    }
+    .section-contact-us .contact-image img {
+        width: 100%;
+        height: 100%;
+        max-height: 300px;
+    }
+    .section-contact-us .contact-btn {
+        justify-content: center;
+    }
+    .footer-social-list {
+        font-size: 16px;
+    }
+    .footer {
+        .mt-md, .my-md {
+            margin-top: 3rem !important;
+            margin-bottom: 3rem !important;
+        }
     }
 }
 

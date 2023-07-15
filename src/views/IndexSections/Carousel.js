@@ -36,11 +36,10 @@ class Carousel extends React.Component {
             <span />
             <span />
             <span />
-            <span className="decorImg"></span>
           </div>
           <Container className="py-md">
             <Row className="justify-content-between align-items-center">
-              <Col className="mb-5 mb-lg-0" lg="5">
+              <Col className="mb-5 mb-lg-0 about-text-block" lg="5">
                 <h1 className="text-white font-weight-light">
                   Buy / Sell Cryptocurrency
                 </h1>
