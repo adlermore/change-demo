@@ -45,7 +45,7 @@ class Carousel extends React.Component {
                 </h1>
                 <p className="lead text-white mt-4">
                   Buy , sell and exchange cryptocurrencies with low percentage.
-                  The office is located at <b>Nalbandyan 7/1 </b>, next to Yerevan Square.
+                  The office is located at <b>Nalbandyan 7/1, </b> next to Yerevan Square.
                   The percentage will change if you become a permanent customer.
                 </p>
               </Col>
@@ -60,6 +60,10 @@ class Carousel extends React.Component {
             <Container>
               <Row className="justify-content-center abount-inner-container">
                 <Col lg="12">
+                <h2 className="text-white about-h2 font-weight-light">
+                  About Us
+                </h2>
+                <div></div>
                   <Row className="row-grid">
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
@@ -103,7 +107,7 @@ class Carousel extends React.Component {
                             Office in the centre of Yerevan
                           </h6>
                           <p className="description  abount-description mt-3">
-                            For you comfort our office is located at Nalbandyan 7/1,
+                            For your comfort our office is located at Nalbandyan 7/1,
                             near Republic square
                           </p>
                         </CardBody>

@@ -98,7 +98,7 @@
     }
 }
 
-.first-about-block{
+.first-about-block {
     .image-block {
         border-radius: 12px;
         overflow: hidden;
@@ -209,13 +209,14 @@
 }
 
 
-.carusel-section{
+.carusel-section {
     background: url('../../img/brand/decorImg.png');
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: 25%;
 }
-.sucsess_mode{
+
+.sucsess_mode {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -229,7 +230,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .svg_block{
+
+    .svg_block {
         width: 100%;
         display: flex;
         align-items: center;
@@ -239,6 +241,7 @@
         background: #4fd69c;
         color: white;
     }
+
     .succsess_text {
         padding: 20px;
         padding-bottom: 15px;
@@ -250,33 +253,38 @@
         text-align: center;
         padding-bottom: 30px;
     }
-    .sucsess_title{
+
+    .sucsess_title {
         font-size: 28px;
         font-weight: 700;
         line-height: 30px;
         margin-bottom: 15px;
     }
-    .sucsess_desc{
+
+    .sucsess_desc {
         font-size: 18px;
         line-height: 20px;
     }
 }
+
 .active {
 
-    .sucsess_mode{
+    .sucsess_mode {
         opacity: 1;
-        pointer-events:all;
+        pointer-events: all;
     }
-} 
+}
 
-.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
     color: white !important;
     background-color: black !important;
     border-color: transparent !important;
 }
 
-.section-contact-us{
-    .contact-btn{
+.section-contact-us {
+    .contact-btn {
         background: #f4f5f7;
         color: #32325d;
         border: none;
@@ -284,15 +292,18 @@
         display: flex;
         align-items: center;
         transition: 0.3s;
-        &:hover{
+
+        &:hover {
             background: black;
             color: white;
         }
     }
-    .btn-hr{
+
+    .btn-hr {
         padding-bottom: 10px;
     }
-    .bg-gradient-secondary{
+
+    .bg-gradient-secondary {
         height: 100%;
     }
 }
@@ -303,6 +314,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.contact-title {
+    font-weight: 700;
+}
+
+.about-h2 {
+    margin-bottom: 20px;
 }
 
 .modal-open .header-global {
@@ -951,14 +970,17 @@
         margin: 115px 50px 0;
     }
 }
+
 @media (max-width:1200px) {
     .hero_logo_img {
         width: 450px
     }
+
     .abount-inner-container .icon-about {
         width: 3rem;
         height: 3rem;
     }
+
     .abount-inner-container {
         .abount-description {
             font-size: 16px;
@@ -966,11 +988,13 @@
             height: 100px;
             line-height: 22px;
         }
+
         .about-title {
             font-size: 20px;
             line-height: 24px;
         }
-    } 
+    }
+
     .crypto-box {
         padding: 20px;
     }
@@ -982,49 +1006,61 @@
             .hero-shape-inner {
                 padding-bottom: 6rem !important;
             }
+
             .shape-container {
                 padding-top: 3rem !important;
                 padding-bottom: 3rem !important;
             }
         }
-    } 
-    .navbar-collapse.collapsing, .navbar-collapse.show {
+    }
+
+    .navbar-collapse.collapsing,
+    .navbar-collapse.show {
         padding: 1.5rem;
         border-radius: 12px;
         background: #e6e7eb;
     }
+
     .navbar-transparent .navbar-nav .nav-link {
         display: flex;
         align-items: center;
     }
+
     .section-lg {
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
-    .top-coins-contianer  .col-4{
+
+    .top-coins-contianer .col-4 {
         margin-bottom: 20px;
     }
+
     .abount-inner-container .abount-description {
         height: auto;
     }
-    .carusel-section{
-        .about-text-block{
+
+    .carusel-section {
+        .about-text-block {
             text-align: center;
         }
     }
+
     .coin-app {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
+
     .section-contact-us .contact-image {
         margin-bottom: 30px;
     }
+
     .footer {
-        .footer-social  {
+        .footer-social {
             justify-content: flex-start !important;
 
         }
+
         .footer_contacts_inner {
             align-items: flex-start;
         }
@@ -1034,94 +1070,122 @@
 @media (max-width:767px) {
     .footer {
         text-align: center;
+
         .footer-social {
             justify-content: center !important;
         }
+
         .footer_contacts_inner {
             align-items: center;
         }
-        
-        .footer-botoom{
+
+        .footer-botoom {
             flex-direction: column-reverse;
             justify-content: center;
-            .col-md-6{
+
+            .col-md-6 {
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
         }
+
         .nav-footer {
             padding-bottom: 20px;
         }
+
         hr {
             margin-top: 1rem;
             margin-bottom: 1rem;
         }
 
     }
+
     .crypto-box {
         img {
             max-width: 45px;
         }
+
         .crypto-box .top a {
             color: black;
             font-weight: 700;
             font-size: 18px;
         }
+
         .price {
             margin-bottom: 10px;
             font-size: 18px;
             line-height: 20px;
         }
-    } 
+    }
 }
+
 @media (max-width:575px) {
     .hero_logo_img {
         width: 280px;
     }
+
     .separator-bottom {
         top: auto;
-        bottom: -1px;
+        bottom: -1px !important;
     }
+
+    .section-shaped .shape-style-1 span {
+        display: none;
+    }
+
     .section {
         position: relative;
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
+
     .about-container {
         margin-top: 30px;
     }
+
     .abount-inner-container {
         padding: 20px;
     }
-    .row.row-grid > [class*=col-] + [class*=col-] {
+
+    .row.row-grid>[class*=col-]+[class*=col-] {
         margin-top: 1.5rem;
     }
+
     .carusel-section {
         background-size: 50%;
     }
+
     .coin-app {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 1fr);
-        .pb-7, .py-7 {
+
+        .pb-7,
+        .py-7 {
             padding-bottom: 3rem !important;
             padding-top: 3rem !important;
         }
     }
+
     .section-contact-us .contact-image img {
         width: 100%;
         height: 100%;
         max-height: 300px;
     }
+
     .section-contact-us .contact-btn {
         justify-content: center;
     }
+
     .footer-social-list {
         font-size: 16px;
     }
+
     .footer {
-        .mt-md, .my-md {
+
+        .mt-md,
+        .my-md {
             margin-top: 3rem !important;
             margin-bottom: 3rem !important;
         }

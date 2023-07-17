@@ -64,9 +64,9 @@ const FormSection = () => {
             <Col lg="6">
               <Card className="bg-gradient-secondary shadow">
                 <CardBody className="p-lg-5">
-                  <h4 className="mb-1">Want to work with us?</h4>
+                  <h4 className="mb-1 contact-title">Want to work with us?</h4>
                   <p className="mt-0">
-                    Your project is very important to us.
+                    Your question is very important to us.
                   </p>
                   <Form noValidate validated={validated} onSubmit={handleSubmit} ref={formCurr}>
                   <Form.Group className={classnames("mt-5")}  controlId="validationCustom01">
