@@ -33,7 +33,7 @@ const FormSection = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_pak5ekv', 'template_6yx6l8m', formCurr.current, '7z903eOIvu2d2tmxL')
+    emailjs.sendForm('service_2cr5xi5', 'template_6yx6l8m', formCurr.current, '7z903eOIvu2d2tmxL')
       .then((result) => {
         console.log(result.text);
       }, (error) => {

@@ -29,7 +29,7 @@ const HeroModal = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_pak5ekv', 'template_ubrbzx9', formCurr.current, '7z903eOIvu2d2tmxL')
+    emailjs.sendForm('service_2cr5xi5', 'template_ubrbzx9', formCurr.current, '7z903eOIvu2d2tmxL')
       .then((result) => {
         // console.log(result.text);
       }, (error) => {
@@ -98,12 +98,12 @@ const HeroModal = () => {
                 </InputGroup>
               </FormGroup>
               <Form.Select className="input-group-alternative input-group form-control   notValidationInput" name="coin_name" aria-label="Coin Select" defaultValue="Bitcoin">
-                <option> Select Coin</option>
                 <option value="Bitcoin">Bitcoin</option>
                 <option value="Ethereum"> Ethereum</option>
-                <option value="Tether"> Tether</option>
+                <option value="Tether USDT"> Tether USDT</option>
+                <option value="USDC"> USDC</option>
+                <option value="BUSD"> BUSD</option>
                 <option value="BNB"> BNB</option>
-                <option value="USD Coin"> USD Coin</option>
                 <option value="XRP"> XRP</option>
               </Form.Select>
             </FormGroup>
