@@ -62,7 +62,7 @@ class Carousel extends React.Component {
               <Row className="justify-content-center abount-inner-container">
                 <Col lg="12">
                 <h2 className="text-white about-h2 font-weight-light">
-                  About Us
+                  Why us ?
                 </h2>
                 <div></div>
                   <Row className="row-grid">

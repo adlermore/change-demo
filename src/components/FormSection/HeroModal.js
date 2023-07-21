@@ -18,7 +18,7 @@ const HeroModal = () => {
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
-      console.log(form.checkValidity());
+      // console.log(form.checkValidity());
     } else if (form.checkValidity() === true) {
       event.preventDefault()
       sendEmail(event);
@@ -31,7 +31,7 @@ const HeroModal = () => {
     e.preventDefault();
     emailjs.sendForm('service_pak5ekv', 'template_ubrbzx9', formCurr.current, '7z903eOIvu2d2tmxL')
       .then((result) => {
-        console.log(result.text);
+        // console.log(result.text);
       }, (error) => {
         console.log(error.text);
       });
@@ -97,9 +97,9 @@ const HeroModal = () => {
                   />
                 </InputGroup>
               </FormGroup>
-              <Form.Select className="input-group-alternative input-group form-control   notValidationInput" name="coin_name" aria-label="Coin Select">
+              <Form.Select className="input-group-alternative input-group form-control   notValidationInput" name="coin_name" aria-label="Coin Select" defaultValue="Bitcoin">
                 <option> Select Coin</option>
-                <option value="Bitcoin" selected>Bitcoin</option>
+                <option value="Bitcoin">Bitcoin</option>
                 <option value="Ethereum"> Ethereum</option>
                 <option value="Tether"> Tether</option>
                 <option value="BNB"> BNB</option>

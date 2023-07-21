@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Coin from './Coin';
-
-
-
 import { Container} from "reactstrap";
 
 function CoinSection() {
@@ -18,7 +15,7 @@ function CoinSection() {
       )
       .then((res) => {
         setCoins(res.data.splice(res.data[7] , 6));
-        console.log(res.data);
+        // console.log(res.data);
       })
       .catch((error) => console.log(error));
   }, []);

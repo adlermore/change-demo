@@ -19,8 +19,25 @@ import {
   UncontrolledTooltip,
 } from "reactstrap";
 
-
 class DemoNavbar extends React.Component {
+
+  state = {
+    collapseClasses: "",
+    collapseOpen: false,
+  };
+
+  onExiting = () => {
+    this.setState({
+      collapseClasses: "collapsing-out",
+    });
+  };
+
+  onExited = () => {
+    this.setState({
+      collapseClasses: "",
+    });
+  };
+
 
   handleClickScroll = () => {
     const element = document.getElementById('map_section');
@@ -46,25 +63,8 @@ class DemoNavbar extends React.Component {
   
   componentDidMount() {
     let headroom = new Headroom(document.getElementById("navbar-main"));
-    // initialise
     headroom.init();
   }
-  state = {
-    collapseClasses: "",
-    collapseOpen: false,
-  };
-
-  onExiting = () => {
-    this.setState({
-      collapseClasses: "collapsing-out",
-    });
-  };
-
-  onExited = () => {
-    this.setState({
-      collapseClasses: "",
-    });
-  };
 
   render() {
     return (
@@ -91,6 +91,7 @@ class DemoNavbar extends React.Component {
                 className={this.state.collapseClasses}
                 onExiting={this.onExiting}
                 onExited={this.onExited}
+                id="mobile-nav"
               >
                 <div className="navbar-collapse-header">
                   <Row>
