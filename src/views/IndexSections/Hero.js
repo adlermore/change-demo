@@ -55,7 +55,7 @@ class Hero extends React.Component {
                       src={require("assets/img/brand/textlogo.png")}
                     />
                     <p className="lead text-white">
-                      Buy, sell and exchange with <b>Crypto Exchange Armenia</b>
+                      Buy, sell or exchange with <b>Crypto Exchange Armenia</b>
                     </p>
                     <Button
                       className="btn-1 btn-neutral ml-1 btn btn-default order-btn"

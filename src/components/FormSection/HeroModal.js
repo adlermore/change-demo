@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Button from 'react-bootstrap/Button';
-import { Card, CardBody, FormGroup, Input, InputGroupAddon, InputGroupText} from "reactstrap";
+import { Card, CardBody, FormGroup, Input, InputGroupAddon, InputGroupText } from "reactstrap";
 import ReactDatetime from "react-datetime";
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
@@ -46,26 +46,26 @@ const HeroModal = () => {
           </div>
           <Form noValidate validated={validated} onSubmit={handleSubmit} ref={formCurr}>
             <FormGroup>
-                <Form.Group  controlId="validationCustom01">
-                  <InputGroup className="input-group-alternative">
-                    <InputGroupAddon addonType="prepend">
-                      <InputGroupText>
-                        <i className="ni ni-single-02" />
-                      </InputGroupText>
-                    </InputGroupAddon>
-                    <Input placeholder="Your name"   required name="user_name"  autoComplete="off"  type="text" />
-                  </InputGroup>
-                </Form.Group>
-                <Form.Group    controlId="validationCustom01">
-                  <InputGroup className="input-group-alternative">
-                    <InputGroupAddon addonType="prepend">
-                      <InputGroupText>
+              <Form.Group controlId="validationCustom01">
+                <InputGroup className="input-group-alternative">
+                  <InputGroupAddon addonType="prepend">
+                    <InputGroupText>
+                      <i className="ni ni-single-02" />
+                    </InputGroupText>
+                  </InputGroupAddon>
+                  <Input placeholder="Your name" required name="user_name" autoComplete="off" type="text" />
+                </InputGroup>
+              </Form.Group>
+              <Form.Group controlId="validationCustom01">
+                <InputGroup className="input-group-alternative">
+                  <InputGroupAddon addonType="prepend">
+                    <InputGroupText>
                       <i className="ni ni-mobile-button" />
-                      </InputGroupText>
-                    </InputGroupAddon>
-                    <Input placeholder="Phone Number"   required name="phone_number"  autoComplete="off"  type="text" />
-                  </InputGroup>
-                </Form.Group>
+                    </InputGroupText>
+                  </InputGroupAddon>
+                  <Input placeholder="Phone Number" required name="phone_number" autoComplete="off" type="text" />
+                </InputGroup>
+              </Form.Group>
               <InputGroup className="input-group-alternative notValidationInput">
                 <InputGroupAddon addonType="prepend">
                   <InputGroupText>
@@ -90,13 +90,34 @@ const HeroModal = () => {
                     minDate={new Date()}
                     inputProps={{
                       placeholder: "Get Vizit Date",
-                      name : "vizit_date",
-                      autoComplete : "off"
+                      name: "vizit_date",
+                      autoComplete: "off"
                     }}
                     timeFormat={false}
                   />
                 </InputGroup>
               </FormGroup>
+              <div className="radio-modal ">
+                <Form.Check
+                  inline
+                  defaultChecked  
+                  name="group1"
+                  type='radio'
+                  label='Buy Coin'
+                  value='Buy Coin'
+                  id='radio-buy'
+                  className="input-group"
+                />
+                <Form.Check
+                  inline
+                  name="group1"
+                  type='radio'
+                  label='Sell Coin'
+                  value='Sell Coin'
+                  id='radio-sell'
+                  className="input-group" 
+                />
+              </div>
               <Form.Select className="input-group-alternative input-group form-control   notValidationInput" name="coin_name" aria-label="Coin Select" defaultValue="Bitcoin">
                 <option value="Bitcoin">Bitcoin</option>
                 <option value="Ethereum"> Ethereum</option>
@@ -121,7 +142,7 @@ const HeroModal = () => {
               />
             </InputGroup>
             <div className="text-center btn-center">
-              <Button    className="btn-round" color="default" size="lg" type="submit" >
+              <Button className="btn-round" color="default" size="lg" type="submit" >
                 Send Message
               </Button>
             </div>
@@ -133,7 +154,7 @@ const HeroModal = () => {
           </div>
           <div className="succsess_text">
             <div className="sucsess_title">Great !</div>
-            <div className= "sucsess_desc">Your Form successfuly send.</div>
+            <div className="sucsess_desc">Your Form successfuly send.</div>
           </div>
         </div>
       </Card>

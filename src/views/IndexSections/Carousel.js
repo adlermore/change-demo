@@ -10,12 +10,12 @@ import { MdSecurity } from 'react-icons/md';
 import { GrMapLocation } from 'react-icons/gr';
 
 const items = [
-  // {
-  //   src: require("assets/img/theme/crypto-slider1.jpg"),
-  //   altText: "",
-  //   caption: "",
-  //   header: "",
-  // },
+  {
+    src: require("assets/img/theme/crypto-slider1.jpg"),
+    altText: "",
+    caption: "",
+    header: "",
+  },
   {
     src: require("assets/img/theme/crypto-slider2.jpg"),
     altText: "",
